@@ -1,0 +1,84 @@
+import { bio, contact, languages, profile, services, stats } from "@/data/portfolio";
+import Portrait from "./Portrait";
+
+export default function Hero() {
+  return (
+    <section id="top" className="mx-auto w-full max-w-6xl px-6 pb-20 pt-8 sm:px-10">
+      <h1 className="mx-auto max-w-5xl text-center font-serif text-4xl leading-tight font-light sm:text-5xl">
+        {profile.name}
+        <br />
+        {profile.role}
+        <br />
+        {profile.location}
+      </h1>
+
+      <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-[1fr_auto_1fr] lg:gap-8">
+        <div className="order-2 flex flex-col gap-10 text-center lg:order-1 lg:text-left">
+          <InfoBlock eyebrow={bio.eyebrow}>
+            <p className="max-w-[22ch] text-sm leading-relaxed text-neutral-600">
+              {bio.paragraph}
+            </p>
+          </InfoBlock>
+
+          <InfoBlock eyebrow={contact.eyebrow}>
+            <p className="text-sm leading-relaxed text-neutral-600">
+              {contact.location}
+              <br />
+              {contact.email}
+              <br />
+              {contact.phone}
+            </p>
+          </InfoBlock>
+
+          <InfoBlock eyebrow={services.eyebrow}>
+            <ul className="text-sm leading-relaxed text-neutral-600">
+              {services.items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </InfoBlock>
+
+          <InfoBlock eyebrow={languages.eyebrow}>
+            <ul className="text-sm leading-relaxed text-neutral-600">
+              {languages.items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </InfoBlock>
+        </div>
+
+        <div className="order-1 lg:order-2">
+          <Portrait />
+        </div>
+
+        <div className="order-3 flex flex-col gap-8 text-center lg:items-end lg:text-right">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <p className="text-[11px] tracking-[0.15em] text-neutral-400">
+                {stat.label.toUpperCase()}
+              </p>
+              <p className="font-serif text-3xl">{stat.value}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function InfoBlock({
+  eyebrow,
+  children,
+}: {
+  eyebrow: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="flex flex-col items-center gap-3 lg:items-start">
+      <p className="text-[11px] tracking-[0.15em] text-neutral-400">
+        {eyebrow.toUpperCase()}
+      </p>
+      {children}
+    </div>
+  );
+}
