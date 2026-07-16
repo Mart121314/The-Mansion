@@ -52,7 +52,6 @@ export const myServices = {
         "Utvikle webapplikasjoner",
         "Konsulentarbeid innen IT",
         "Feilsøking og teknisk support",
-        "Hosting/drift av nettsider",
       ],
     },
     {
@@ -61,17 +60,11 @@ export const myServices = {
     },
     {
       name: "Kreative tjenester",
-      items: ["Grafisk design", "Video-redigering"],
+      items: ["Video-redigering"],
     },
     {
       name: "Konsulent / undervisning",
-      items: [
-        "Kurs i programmering",
-        "Coaching",
-        "Teknisk rådgivning",
-        "Workshops",
-        "Dokumentasjon og opplæring",
-      ],
+      items: ["Coaching", "Teknisk rådgivning"],
     },
   ],
 };
