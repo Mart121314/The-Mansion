@@ -1,4 +1,4 @@
-import { bio, contact, languages, profile, services, stats } from "@/data/portfolio";
+import { bio, contact, profile, services, stats } from "@/data/portfolio";
 import Portrait from "./Portrait";
 
 export default function Hero() {
@@ -33,14 +33,6 @@ export default function Hero() {
           <InfoBlock eyebrow={services.eyebrow}>
             <ul className="text-sm leading-relaxed text-neutral-600">
               {services.items.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </InfoBlock>
-
-          <InfoBlock eyebrow={languages.eyebrow}>
-            <ul className="text-sm leading-relaxed text-neutral-600">
-              {languages.items.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>

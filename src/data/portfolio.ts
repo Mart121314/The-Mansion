@@ -33,18 +33,13 @@ export const bio = {
 export const contact = {
   eyebrow: "Kontakt",
   location: "Kristiansand, Norge",
-  email: "martin_strand_eikefet@hotmail.com",
+  email: "it_utvikling@martineikefet.dev",
   phone: "+47 406 16 483",
 };
 
 export const services = {
   eyebrow: "Fokusområder",
   items: ["Frontend-utvikling", "Spillutvikling", "E-sport & innholdsproduksjon"],
-};
-
-export const languages = {
-  eyebrow: "Språk",
-  items: ["Norsk — skriftlig & muntlig: veldig godt", "Engelsk — skriftlig & muntlig: veldig godt"],
 };
 
 export const myServices = {
