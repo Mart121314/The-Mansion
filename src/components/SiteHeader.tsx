@@ -4,6 +4,15 @@ import { useState } from "react";
 import { nav, profile, socials } from "@/data/portfolio";
 import GitHubIcon from "./icons/GitHubIcon";
 
+function scrollToSection(event: React.MouseEvent<HTMLAnchorElement>, href: string) {
+  if (!href.startsWith("#")) return;
+  const target = document.getElementById(href.slice(1));
+  if (!target) return;
+
+  event.preventDefault();
+  target.scrollIntoView({ behavior: "smooth" });
+}
+
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
 
@@ -31,13 +40,22 @@ export default function SiteHeader() {
 
         <nav className="hidden gap-8 text-sm tracking-wide text-neutral-600 sm:flex">
           {nav.map((item) => (
-            <a key={item.label} href={item.href} className="hover:text-neutral-900">
+            <a
+              key={item.label}
+              href={item.href}
+              onClick={(event) => scrollToSection(event, item.href)}
+              className="hover:text-neutral-900"
+            >
               {item.label.toUpperCase()}
             </a>
           ))}
         </nav>
 
-        <a href="#top" className="flex flex-col items-center gap-1">
+        <a
+          href="#top"
+          onClick={(event) => scrollToSection(event, "#top")}
+          className="flex flex-col items-center gap-1"
+        >
           <span className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 font-serif text-xs">
             {profile.initials}
           </span>
@@ -70,7 +88,10 @@ export default function SiteHeader() {
             <a
               key={item.label}
               href={item.href}
-              onClick={() => setOpen(false)}
+              onClick={(event) => {
+                scrollToSection(event, item.href);
+                setOpen(false);
+              }}
               className="py-1 hover:text-neutral-900"
             >
               {item.label.toUpperCase()}
