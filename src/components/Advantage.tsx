@@ -5,7 +5,7 @@ export default function Advantage() {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 py-24 sm:px-10">
       <Reveal>
-        <h2 className="font-serif text-3xl font-light">Mine Ferdigheter</h2>
+        <h2 className="font-serif text-3xl">Mine Ferdigheter</h2>
       </Reveal>
 
       <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

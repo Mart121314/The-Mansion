@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 py-24 sm:px-10">
       <Reveal>
-        <h2 className="font-serif text-3xl font-light">{myServices.heading}</h2>
+        <h2 className="font-serif text-3xl">{myServices.heading}</h2>
       </Reveal>
 
       <div className="mt-14 flex flex-col gap-10">

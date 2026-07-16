@@ -9,7 +9,7 @@ export default function GamingExperience() {
       <p className="text-[11px] tracking-[0.15em] text-neutral-400">
         {gaming.eyebrow.toUpperCase()}
       </p>
-      <h2 className="mt-2 font-serif text-3xl font-light">{gaming.heading}</h2>
+      <h2 className="mt-2 font-serif text-3xl">{gaming.heading}</h2>
       <p className="mt-4 max-w-md text-sm leading-relaxed text-neutral-600">
         {gaming.paragraph}
       </p>

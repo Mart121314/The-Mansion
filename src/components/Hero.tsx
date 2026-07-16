@@ -4,7 +4,7 @@ import Portrait from "./Portrait";
 export default function Hero() {
   return (
     <section id="top" className="mx-auto w-full max-w-6xl px-6 pb-20 pt-8 sm:px-10">
-      <h1 className="mx-auto max-w-5xl text-center font-serif text-4xl leading-tight font-light sm:text-5xl">
+      <h1 className="mx-auto max-w-5xl text-center font-serif text-4xl leading-tight sm:text-5xl">
         {profile.name}
         <br />
         {profile.role}

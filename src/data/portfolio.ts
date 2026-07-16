@@ -121,6 +121,7 @@ export const experience = [
     year: "2023 – 2024",
     title: "Arbeidspraksis — Programmering & 3D",
     place: "Å-Energi, Kristiansand",
+    note: "På grunn av en taushetserklæring (NDA) kan jeg ikke dele hvilke oppgaver som ble utført hos Å-Energi, men referanse kan oppgis ved ønske.",
   },
   {
     year: "2018 – 2024",

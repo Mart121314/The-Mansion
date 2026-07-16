@@ -9,7 +9,7 @@ export default function SiteFooter() {
         </p>
         <a
           href={`mailto:${contact.email}`}
-          className="max-w-full font-serif text-xl leading-snug font-light break-words transition-colors hover:text-neutral-600 sm:text-3xl md:text-4xl"
+          className="max-w-full font-serif text-xl leading-snug break-words transition-colors hover:text-neutral-600 sm:text-3xl md:text-4xl"
         >
           {contact.email}
         </a>

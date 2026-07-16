@@ -8,7 +8,7 @@ export default function Tournaments() {
       <p className="text-[11px] tracking-[0.15em] text-neutral-400">
         {tournaments.eyebrow.toUpperCase()}
       </p>
-      <h2 className="mt-2 font-serif text-3xl font-light">{tournaments.heading}</h2>
+      <h2 className="mt-2 font-serif text-3xl">{tournaments.heading}</h2>
       <p className="mt-4 max-w-md text-sm leading-relaxed text-neutral-600">
         {tournaments.paragraph}
       </p>
@@ -20,7 +20,7 @@ export default function Tournaments() {
         {tournaments.relevance}
       </p>
 
-      <h3 className="mt-12 font-serif text-2xl font-light">
+      <h3 className="mt-12 font-serif text-2xl">
         {tournaments.captaincy.heading}
       </h3>
       <p className="mt-3 max-w-md text-sm leading-relaxed text-neutral-600">
