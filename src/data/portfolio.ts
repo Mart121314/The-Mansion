@@ -172,7 +172,14 @@ export const tournaments = {
   heading: "Turneringserfaring",
   paragraph:
     "Konkurransehistorikk fra flere år med turneringsspill på høyt internasjonalt nivå i World of Warcraft, samt høydepunkter fra turneringer på video.",
-  captainNote: "Tidligere lagkaptein for WWDK Nation, DHDK Nation og Bergen Boys.",
+  relevance:
+    "Å konkurrere blant verdenseliten har gitt meg verdifull erfaring med å prestere under høyt press, ta raske beslutninger og opprettholde fokus i krevende situasjoner. Jeg har også utviklet evnen til kontinuerlig forbedring gjennom analyse, disiplin og målrettet trening.",
+  captaincy: {
+    heading: "Tidligere lagkaptein",
+    paragraph: "Tidligere lagkaptein for WWDK Nation, DHDK Nation og Bergen Boys.",
+    relevance:
+      "Som lagkaptein hadde jeg ansvar for å koordinere laget, legge strategier og sikre god kommunikasjon før og under konkurranser. Denne erfaringen har styrket mine lederegenskaper, samarbeidsevner og evne til å motivere andre mot felles mål.",
+  },
   history: [
     {
       name: "AWC Summer 2019 EU Cup 5",

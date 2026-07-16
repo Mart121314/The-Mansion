@@ -12,8 +12,25 @@ export default function Tournaments() {
       <p className="mt-4 max-w-md text-sm leading-relaxed text-neutral-600">
         {tournaments.paragraph}
       </p>
-      <p className="mt-2 max-w-md text-sm font-medium text-neutral-700">
-        {tournaments.captainNote}
+
+      <p className="mt-6 text-[11px] tracking-[0.15em] text-neutral-400">
+        RELEVANS FOR ARBEIDSLIVET
+      </p>
+      <p className="mt-2 max-w-md text-sm leading-relaxed text-neutral-600">
+        {tournaments.relevance}
+      </p>
+
+      <h3 className="mt-12 font-serif text-2xl font-light">
+        {tournaments.captaincy.heading}
+      </h3>
+      <p className="mt-3 max-w-md text-sm leading-relaxed text-neutral-600">
+        {tournaments.captaincy.paragraph}
+      </p>
+      <p className="mt-4 text-[11px] tracking-[0.15em] text-neutral-400">
+        RELEVANS FOR ARBEIDSLIVET
+      </p>
+      <p className="mt-2 max-w-md text-sm leading-relaxed text-neutral-600">
+        {tournaments.captaincy.relevance}
       </p>
 
       <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">
