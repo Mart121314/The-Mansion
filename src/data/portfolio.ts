@@ -17,8 +17,7 @@ export const nav = [
 ];
 
 export const github = "https://github.com/Mart121314";
-// TODO: bytt ut med din faktiske LinkedIn-profil.
-export const linkedin = "#";
+export const linkedin = "https://www.linkedin.com/in/martin-strand-eikefet-208020245/";
 
 export const socials = [
   { label: "GitHub", href: github },
@@ -254,11 +253,43 @@ export const tournaments = {
       href: "https://battlefy.com/world-of-warcraft-arena-world-championship/awc-bfa-2020-eu-cup-4/5e55a41bd4159874d25d3f3f/info",
     },
   ],
-  video: {
-    name: "Turnering — Høydepunkter",
-    stat: "Video",
-    href: "https://www.youtube.com/watch?v=YaChg_s2DDo",
-  },
+  videos: [
+    {
+      name: "AWC EU Cup 1 — vs Wildcard Gaming",
+      stat: "Video",
+      href: "https://www.youtube.com/watch?v=YaChg_s2DDo",
+    },
+    {
+      name: "AWC EU Summer Cup — vs WW DK Nation",
+      stat: "Video",
+      href: "https://www.youtube.com/watch?v=OeZibYIpzBI",
+    },
+    {
+      name: "AWC EU Summer Cup 3 — vs Tempo Storm",
+      stat: "Video",
+      href: "https://www.youtube.com/watch?v=M5cnoi6G-CE",
+    },
+    {
+      name: "AWC EU Summer Cup 3 — vs Keyboard Rhythm",
+      stat: "Video",
+      href: "https://www.youtube.com/watch?v=DRhsoC4ivbA",
+    },
+    {
+      name: "AWC EU Summer Cup 3 — vs Wildcard Gaming",
+      stat: "Video",
+      href: "https://www.youtube.com/watch?v=fIzU1ypNQUI",
+    },
+    {
+      name: "AWC EU Summer Cup 2 — vs Diabolus",
+      stat: "Video",
+      href: "https://www.youtube.com/watch?v=4AR_nelUGfs",
+    },
+    {
+      name: "AWC EU Summer Cup 3 — vs XRB to the Moon",
+      stat: "Video",
+      href: "https://www.youtube.com/watch?v=agrZ_bitdCE",
+    },
+  ],
 };
 
 export const programming = {

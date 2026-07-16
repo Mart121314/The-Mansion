@@ -39,31 +39,35 @@ export default function Tournaments() {
         ))}
       </ul>
 
-      <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">VIDEO</h3>
+      <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">
+        HØYDEPUNKTER
+      </h3>
       <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-        <Reveal>
-          <a
-            href={tournaments.video.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center justify-between gap-4 rounded-sm border border-neutral-200 px-6 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
-          >
-            <div className="flex items-center gap-4">
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent-soft text-neutral-700">
-                <YouTubeIcon className="h-5 w-5" />
-              </span>
-              <div>
-                <p className="text-[11px] tracking-[0.15em] text-neutral-400">
-                  YOUTUBE
-                </p>
-                <p className="text-base">{tournaments.video.name}</p>
+        {tournaments.videos.map((video, index) => (
+          <Reveal key={video.href} delay={Math.min(index, 6) * 60}>
+            <a
+              href={video.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-between gap-4 rounded-sm border border-neutral-200 px-6 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
+            >
+              <div className="flex items-center gap-4">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent-soft text-neutral-700">
+                  <YouTubeIcon className="h-5 w-5" />
+                </span>
+                <div>
+                  <p className="text-[11px] tracking-[0.15em] text-neutral-400">
+                    YOUTUBE
+                  </p>
+                  <p className="text-base">{video.name}</p>
+                </div>
               </div>
-            </div>
-            <p className="text-sm whitespace-nowrap text-neutral-500">
-              {tournaments.video.stat}
-            </p>
-          </a>
-        </Reveal>
+              <p className="text-sm whitespace-nowrap text-neutral-500">
+                {video.stat}
+              </p>
+            </a>
+          </Reveal>
+        ))}
       </div>
     </section>
   );

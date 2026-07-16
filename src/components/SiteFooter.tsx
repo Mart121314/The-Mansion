@@ -19,6 +19,8 @@ export default function SiteFooter() {
             <a
               key={social.label}
               href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition-colors hover:text-neutral-900"
             >
               {social.label}

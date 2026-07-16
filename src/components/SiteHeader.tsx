@@ -70,6 +70,8 @@ export default function SiteHeader() {
             <a
               key={social.label}
               href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={social.label}
               className="transition-colors hover:text-neutral-900"
             >
