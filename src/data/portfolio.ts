@@ -208,7 +208,7 @@ export const programming = {
     {
       title: "Weather Forecast",
       description: "Værapp med søk og oversikt over temperatur, vind og lufttrykk i storbyer.",
-      href: "#",
+      href: "https://vaer-data.vercel.app/",
       image: "/images/website-weather-forecast.png",
     },
     { title: "Nettside to", description: "Kort beskrivelse", href: "#" },
