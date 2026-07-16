@@ -12,6 +12,9 @@ export default function Tournaments() {
       <p className="mt-4 max-w-md text-sm leading-relaxed text-neutral-600">
         {tournaments.paragraph}
       </p>
+      <p className="mt-2 max-w-md text-sm font-medium text-neutral-700">
+        {tournaments.captainNote}
+      </p>
 
       <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">
         TURNERINGER DELTATT I

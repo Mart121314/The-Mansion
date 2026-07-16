@@ -192,6 +192,7 @@ export const tournaments = {
   heading: "Turneringserfaring",
   paragraph:
     "Konkurransehistorikk fra flere år med turneringsspill på høyt internasjonalt nivå i World of Warcraft, samt høydepunkter fra turneringer på video.",
+  captainNote: "Tidligere lagkaptein for WWDK Nation, DHDK Nation og Bergen Boys.",
   history: [
     {
       name: "AWC Summer 2019 EU Cup 5",
