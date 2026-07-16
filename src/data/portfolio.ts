@@ -212,7 +212,6 @@ export const programming = {
       image: "/images/website-weather-forecast.png",
     },
     { title: "Nettside to", description: "Kort beskrivelse", href: "#" },
-    { title: "Nettside tre", description: "Kort beskrivelse", href: "#" },
   ],
   games: [
     {

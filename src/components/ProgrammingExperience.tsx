@@ -94,7 +94,12 @@ export default function ProgrammingExperience() {
             </div>
           </a>
         ))}
+      </div>
 
+      <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">
+        KILDEKODE
+      </h3>
+      <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-3">
         <a
           href={github}
           target="_blank"
