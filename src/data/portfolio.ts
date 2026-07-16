@@ -148,7 +148,9 @@ export const gaming = {
   eyebrow: "Gaming på nett",
   heading: "Gaming & Innholdsproduksjon",
   paragraph:
-    "I over fire år konkurrerte jeg i World of Warcraft på høyt internasjonalt nivå, og oppnådde flere topp 3-plasseringer i europeiske turneringer. I tillegg til konkurransespilling streamet jeg på Twitch i syv år og bygget opp en følgerbase på rundt 3 500 følgere.",
+    "I over fire år konkurrerte jeg i World of Warcraft på høyt internasjonalt nivå og oppnådde flere topp 3-plasseringer i europeiske turneringer. Ved siden av konkurransespillingen streamet jeg på Twitch i syv år og bygget opp en følgerbase på rundt 3 500 følgere.",
+  relevance:
+    "Gjennom konkurransespill og innholdsproduksjon har jeg utviklet sterk evne til å prestere under press, kommunisere tydelig og bygge relasjoner med et publikum. Erfaringen har også lært meg å arbeide målrettet over tid, ta initiativ og kontinuerlig forbedre egne ferdigheter.",
   channels: [
     {
       platform: "YouTube",
@@ -171,12 +173,12 @@ export const tournaments = {
   paragraph:
     "Konkurransehistorikk fra flere år med turneringsspill på høyt internasjonalt nivå i World of Warcraft, samt høydepunkter fra turneringer på video.",
   relevance:
-    "Å konkurrere blant verdenseliten har gitt meg verdifull erfaring med å prestere under høyt press, ta raske beslutninger og opprettholde fokus i krevende situasjoner. Jeg har også utviklet evnen til kontinuerlig forbedring gjennom analyse, disiplin og målrettet trening.",
+    "Å konkurrere blant Europas beste spillere har gitt meg verdifull erfaring med å ta raske beslutninger, analysere komplekse situasjoner og levere gode prestasjoner under høyt press. Jeg har også utviklet stor disiplin, utholdenhet og en strukturert tilnærming til kontinuerlig forbedring.",
   captaincy: {
     heading: "Tidligere lagkaptein",
     paragraph: "Tidligere lagkaptein for WWDK Nation, DHDK Nation og Bergen Boys.",
     relevance:
-      "Som lagkaptein hadde jeg ansvar for å koordinere laget, legge strategier og sikre god kommunikasjon før og under konkurranser. Denne erfaringen har styrket mine lederegenskaper, samarbeidsevner og evne til å motivere andre mot felles mål.",
+      "Som lagkaptein hadde jeg ansvar for strategi, koordinering og kommunikasjon i et konkurransepreget miljø. Rollen styrket mine ferdigheter innen ledelse, samarbeid, problemløsning og evnen til å motivere et team mot felles mål.",
   },
   history: [
     {

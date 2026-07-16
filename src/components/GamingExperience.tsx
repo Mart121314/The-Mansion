@@ -14,6 +14,13 @@ export default function GamingExperience() {
         {gaming.paragraph}
       </p>
 
+      <p className="mt-6 text-[11px] tracking-[0.15em] text-neutral-400">
+        RELEVANS FOR ARBEIDSLIVET
+      </p>
+      <p className="mt-2 max-w-md text-sm leading-relaxed text-neutral-600">
+        {gaming.relevance}
+      </p>
+
       <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
         {gaming.channels.map((channel, index) => (
           <Reveal key={channel.platform} delay={index * 100}>
