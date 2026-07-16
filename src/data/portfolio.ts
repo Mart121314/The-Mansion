@@ -150,6 +150,11 @@ export const experience = [
     place: "Internasjonale turneringer og online-cuper, flere topp 3-plasseringer",
   },
   {
+    year: "2016 – 2024",
+    title: "Profesjonell e-sportcoach",
+    place: "BlazingBoost.com",
+  },
+  {
     year: "2016 – 2026",
     title: "Twitch-streamer",
     place: "World of Warcraft — bygget opp en følgerbase på rundt 3 500 følgere",
