@@ -9,14 +9,18 @@ export default function SiteFooter() {
         </p>
         <a
           href={`mailto:${contact.email}`}
-          className="font-serif text-3xl font-light sm:text-4xl"
+          className="max-w-full font-serif text-xl leading-snug font-light break-words transition-colors hover:text-neutral-600 sm:text-3xl md:text-4xl"
         >
           {contact.email}
         </a>
 
         <div className="mt-6 flex gap-6 text-sm text-neutral-500">
           {socials.map((social) => (
-            <a key={social.label} href={social.href} className="hover:text-neutral-900">
+            <a
+              key={social.label}
+              href={social.href}
+              className="transition-colors hover:text-neutral-900"
+            >
               {social.label}
             </a>
           ))}

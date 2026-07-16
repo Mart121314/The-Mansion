@@ -1,4 +1,5 @@
 import { gaming } from "@/data/portfolio";
+import Reveal from "./Reveal";
 
 export default function GamingExperience() {
   return (
@@ -12,29 +13,30 @@ export default function GamingExperience() {
       </p>
 
       <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-        {gaming.channels.map((channel) => (
-          <a
-            key={channel.platform}
-            href={channel.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center justify-between gap-4 rounded-sm border border-neutral-200 px-6 py-6 transition-colors hover:border-neutral-400"
-          >
-            <div className="flex items-center gap-4">
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent-soft text-neutral-700">
-                <PlatformIcon platform={channel.platform} />
-              </span>
-              <div>
-                <p className="text-[11px] tracking-[0.15em] text-neutral-400">
-                  {channel.platform.toUpperCase()}
-                </p>
-                <p className="text-base">{channel.name}</p>
+        {gaming.channels.map((channel, index) => (
+          <Reveal key={channel.platform} delay={index * 100}>
+            <a
+              href={channel.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-between gap-4 rounded-sm border border-neutral-200 px-6 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
+            >
+              <div className="flex items-center gap-4">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent-soft text-neutral-700">
+                  <PlatformIcon platform={channel.platform} />
+                </span>
+                <div>
+                  <p className="text-[11px] tracking-[0.15em] text-neutral-400">
+                    {channel.platform.toUpperCase()}
+                  </p>
+                  <p className="text-base">{channel.name}</p>
+                </div>
               </div>
-            </div>
-            <p className="text-sm whitespace-nowrap text-neutral-500">
-              {channel.stat}
-            </p>
-          </a>
+              <p className="text-sm whitespace-nowrap text-neutral-500">
+                {channel.stat}
+              </p>
+            </a>
+          </Reveal>
         ))}
       </div>
     </section>
