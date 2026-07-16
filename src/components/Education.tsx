@@ -30,9 +30,7 @@ function Timeline({
           <span className="text-base">{item.title}</span>
           <span className="text-sm text-neutral-500">{item.place}</span>
           {item.note && (
-            <span className="mt-1 text-sm text-neutral-500 italic">
-              {item.note}
-            </span>
+            <span className="mt-1 text-sm text-neutral-500">{item.note}</span>
           )}
         </li>
       ))}

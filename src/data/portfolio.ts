@@ -125,6 +125,7 @@ export const experience = [
     year: "2016 – 2024",
     title: "Profesjonell e-sportcoach",
     place: "BlazingBoost.com",
+    note: "Coach for kunder hos BlazingBoost, hvor jeg hjalp spillere med å forbedre ferdigheter, utvikle strategier og nå sine personlige mål innen konkurransespilling.",
   },
   {
     year: "2016 – 2023",
@@ -135,6 +136,7 @@ export const experience = [
     year: "2015",
     title: "Frivillig arbeid — Teknisk støtte for eldre",
     place: "Frivilligsentralen, Knarvik",
+    note: "Hjalp eldre med tekniske utfordringer knyttet til PC, mobiltelefoner, nettbrett og digitale tjenester. Bisto med å forklare teknologi på en enkel og forståelig måte, tilpasset hver enkelt persons behov og forkunnskaper.",
   },
 ];
 
