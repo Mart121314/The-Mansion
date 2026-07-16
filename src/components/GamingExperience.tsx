@@ -1,5 +1,7 @@
 import { gaming } from "@/data/portfolio";
 import Reveal from "./Reveal";
+import TwitchIcon from "./icons/TwitchIcon";
+import YouTubeIcon from "./icons/YouTubeIcon";
 
 export default function GamingExperience() {
   return (
@@ -45,17 +47,9 @@ export default function GamingExperience() {
 
 function PlatformIcon({ platform }: { platform: string }) {
   const common = "h-5 w-5";
-  if (platform === "YouTube") {
-    return (
-      <svg viewBox="0 0 24 24" className={common} fill="currentColor">
-        <path d="M22 12s0-3.2-.4-4.7a2.9 2.9 0 0 0-2-2C17.9 5 12 5 12 5s-5.9 0-7.6.3a2.9 2.9 0 0 0-2 2C2 8.8 2 12 2 12s0 3.2.4 4.7a2.9 2.9 0 0 0 2 2C6.1 19 12 19 12 19s5.9 0 7.6-.3a2.9 2.9 0 0 0 2-2C22 15.2 22 12 22 12ZM10 15.5v-7l6 3.5-6 3.5Z" />
-      </svg>
-    );
-  }
-  return (
-    <svg viewBox="0 0 24 24" className={common} fill="currentColor">
-      <path d="M4 3 3 6.5V18h4.5V21l3-3H14l5-5V3Zm14 9-3 3h-3l-2.5 2.5V15H6V5h12Z" />
-      <path d="M15.5 8h1.7v4h-1.7Zm-4 0h1.7v4h-1.7Z" />
-    </svg>
+  return platform === "YouTube" ? (
+    <YouTubeIcon className={common} />
+  ) : (
+    <TwitchIcon className={common} />
   );
 }

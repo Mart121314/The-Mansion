@@ -12,13 +12,18 @@ export const nav = [
   { label: "Utdanning", href: "#education" },
   { label: "Programmering", href: "#work" },
   { label: "Gaming", href: "#gaming" },
+  { label: "Turneringer", href: "#tournaments" },
   { label: "Kontakt", href: "#contact" },
 ];
 
 export const github = "https://github.com/Mart121314";
+// TODO: bytt ut med din faktiske LinkedIn-profil.
+export const linkedin = "#";
 
-// Kun ekte, fungerende lenker — ingen placeholder-ikoner.
-export const socials = [{ label: "GitHub", href: github }];
+export const socials = [
+  { label: "GitHub", href: github },
+  { label: "LinkedIn", href: linkedin },
+];
 
 export const bio = {
   eyebrow: "Sammendrag",
@@ -186,6 +191,74 @@ export const gaming = {
       href: "https://twitch.tv/Berlyirltv",
     },
   ],
+};
+
+export const tournaments = {
+  eyebrow: "Turneringer",
+  heading: "Turneringserfaring",
+  paragraph:
+    "Konkurransehistorikk fra flere år med turneringsspill på høyt internasjonalt nivå i World of Warcraft, samt høydepunkter fra turneringer på video.",
+  history: [
+    {
+      name: "AWC Summer 2019 EU Cup 5",
+      team: "DHDK Nation",
+      placement: "Topp 16",
+      href: "https://battlefy.com/world-of-warcraft-arena-world-championship/awc-summer-2019-eu-cup-5/5d2f9854ba5619457e6dc5a3/info?infoTab=details",
+    },
+    {
+      name: "Method Mayhem Kick-Off EU (5v5)",
+      team: "2 Ghouls 1 Cup",
+      placement: "Topp 6",
+      href: "https://battlefy.com/methodgg/%5B5v5%5D-method-mayhem-kick-off-eu/5e399e1abfd3fe5ea1d860c8/info?infoTab=details",
+    },
+    {
+      name: "Method Mayhem Week 1 EU (3v3)",
+      team: "World Second",
+      placement: "2. plass",
+      href: "https://battlefy.com/methodgg/%5B3v3%5D-method-mayhem-week-1-eu/5e46d13db71fe0104b9a7895/info",
+    },
+    {
+      name: "Method Mayhem Week 2 EU (3v3)",
+      team: "World Second",
+      placement: "3. plass",
+      href: "https://battlefy.com/methodgg/%5B3v3%5D-method-mayhem-week-2-eu/5e46d494b71fe0104b9a7d12/info?infoTab=details",
+    },
+    {
+      name: "Method Mayhem Season 1 Finals EU (3v3)",
+      team: "World Second",
+      placement: "Topp 6",
+      href: "https://battlefy.com/methodgg/%5B3v3%5D-method-mayhem-season-1-finals-eu/5e46d623049add0b140c4bd4/info?infoTab=details",
+    },
+    {
+      name: "AWC BFA 2020 EU Cup 1",
+      team: "Bergen Boys",
+      placement: "2. plass",
+      href: "https://battlefy.com/world-of-warcraft-arena-world-championship/awc-bfa-2020-eu-cup-1/5e4196e429faf310e4066006/info",
+    },
+    {
+      name: "AWC BFA 2020 EU Cup 2",
+      team: "Bergen Boys",
+      placement: "Topp 8",
+      href: "https://battlefy.com/world-of-warcraft-arena-world-championship/awc-bfa-2020-eu-cup-2/5e55a319d9de2874d46ab01f/info",
+    },
+    {
+      name: "AWC BFA 2020 EU Cup 3",
+      team: "Bergen Boys",
+      placement: "Topp 6",
+      href: "https://battlefy.com/world-of-warcraft-arena-world-championship/awc-bfa-2020-eu-cup-3/5e55a3d2d4159874d25d3f33/stage/5ed7c98a0c8581672c92ae6f/bracket/",
+    },
+    {
+      name: "AWC BFA 2020 EU Cup 4",
+      team: "Bergen Boys",
+      placement: "Topp 6",
+      href: "https://battlefy.com/world-of-warcraft-arena-world-championship/awc-bfa-2020-eu-cup-4/5e55a41bd4159874d25d3f3f/info",
+    },
+  ],
+  video: {
+    name: "Turnering — Høydepunkter",
+    stat: "Video",
+    href: "https://www.youtube.com/watch?v=YaChg_s2DDo",
+  },
 };
 
 export const programming = {

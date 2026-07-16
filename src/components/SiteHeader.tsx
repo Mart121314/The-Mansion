@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { nav, profile, socials } from "@/data/portfolio";
 import GitHubIcon from "./icons/GitHubIcon";
+import LinkedInIcon from "./icons/LinkedInIcon";
 
 function scrollToSection(event: React.MouseEvent<HTMLAnchorElement>, href: string) {
   if (!href.startsWith("#")) return;
@@ -114,6 +115,8 @@ function SocialIcon({ label }: { label: string }) {
       );
     case "GitHub":
       return <GitHubIcon className={common} />;
+    case "LinkedIn":
+      return <LinkedInIcon className={common} />;
     case "Facebook":
       return (
         <svg viewBox="0 0 24 24" className={common} fill="currentColor">

@@ -7,6 +7,7 @@ import Reveal from "@/components/Reveal";
 import Services from "@/components/Services";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
+import Tournaments from "@/components/Tournaments";
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
       </Reveal>
       <Reveal>
         <GamingExperience />
+      </Reveal>
+      <Reveal>
+        <Tournaments />
       </Reveal>
       <Reveal>
         <SiteFooter />
