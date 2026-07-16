@@ -51,7 +51,7 @@ export default function ProgrammingExperience() {
                     alt={site.title}
                     fill
                     sizes="(min-width: 640px) 33vw, 100vw"
-                    className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                    className="object-cover object-left-top transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               ) : (

@@ -211,7 +211,12 @@ export const programming = {
       href: "https://vaer-data.vercel.app/",
       image: "/images/website-weather-forecast.png",
     },
-    { title: "Nettside to", description: "Kort beskrivelse", href: "#" },
+    {
+      title: "ArenaQ",
+      description: "Aktivitets- og rangeringsoversikt for MoP 3v3-arena, med spillersøk og leaderboard.",
+      href: "https://arenaq.vercel.app/",
+      image: "/images/website-arenaq.png",
+    },
   ],
   games: [
     {
