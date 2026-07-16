@@ -1,4 +1,4 @@
-import { bio, contact, profile, services, stats } from "@/data/portfolio";
+import { bio, contact, linkedin, profile, services, stats } from "@/data/portfolio";
 import Portrait from "./Portrait";
 
 export default function Hero() {
@@ -27,6 +27,15 @@ export default function Hero() {
               {contact.email}
               <br />
               {contact.phone}
+              <br />
+              <a
+                href={linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-neutral-900"
+              >
+                LinkedIn
+              </a>
             </p>
           </InfoBlock>
 

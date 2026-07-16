@@ -121,21 +121,6 @@ export const education = [
     title: "Bachelor i Akademisk E-sport",
     place: "Universitetet i Agder",
   },
-  {
-    year: "2021 – 2022",
-    title: "Privatist VG3",
-    place: "Fag som manglet fra VG3 ble tatt som privatist",
-  },
-  {
-    year: "2013 – 2015",
-    title: "Allmenne fag, VG1–2",
-    place: "Knarvik VGS",
-  },
-  {
-    year: "2012 – 2013",
-    title: "Elektrofag, VG1",
-    place: "Knarvik VGS",
-  },
 ];
 
 export const experience = [
@@ -158,16 +143,6 @@ export const experience = [
     year: "2016 – 2026",
     title: "Twitch-streamer",
     place: "World of Warcraft — bygget opp en følgerbase på rundt 3 500 følgere",
-  },
-  {
-    year: "2015",
-    title: "Frivillig arbeid — Teknisk støtte for eldre",
-    place: "Frivilligsentralen, Knarvik",
-  },
-  {
-    year: "2014",
-    title: "Arbeidspraksis — Tankrengjøring",
-    place: "Tankspyler, Bergen",
   },
 ];
 

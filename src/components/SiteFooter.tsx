@@ -15,17 +15,19 @@ export default function SiteFooter() {
         </a>
 
         <div className="mt-6 flex gap-6 text-sm text-neutral-500">
-          {socials.map((social) => (
-            <a
-              key={social.label}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-neutral-900"
-            >
-              {social.label}
-            </a>
-          ))}
+          {socials
+            .filter((social) => social.label !== "LinkedIn")
+            .map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-neutral-900"
+              >
+                {social.label}
+              </a>
+            ))}
         </div>
 
         <p className="mt-10 text-xs text-neutral-400">
