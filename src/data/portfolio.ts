@@ -79,7 +79,7 @@ export const myServices = {
 export const stats = [
   { value: "6+", label: "År med konkurranse-e-sport" },
   { value: "~3 500", label: "Twitch-følgere" },
-  { value: "10", label: "År med innholdsproduksjon" },
+  { value: "7", label: "År med innholdsproduksjon" },
   { value: "Topp 3", label: "Europeiske e-sportplasseringer" },
 ];
 
@@ -140,7 +140,7 @@ export const experience = [
     place: "BlazingBoost.com",
   },
   {
-    year: "2016 – 2026",
+    year: "2016 – 2023",
     title: "Twitch-streamer",
     place: "World of Warcraft — bygget opp en følgerbase på rundt 3 500 følgere",
   },
@@ -155,7 +155,7 @@ export const gaming = {
   eyebrow: "Gaming på nett",
   heading: "Gaming & Innholdsproduksjon",
   paragraph:
-    "I over fire år konkurrerte jeg i World of Warcraft på høyt internasjonalt nivå, og oppnådde flere topp 3-plasseringer i europeiske turneringer. I tillegg til konkurransespilling streamet jeg på Twitch i ti år og bygget opp en følgerbase på rundt 3 500 følgere.",
+    "I over fire år konkurrerte jeg i World of Warcraft på høyt internasjonalt nivå, og oppnådde flere topp 3-plasseringer i europeiske turneringer. I tillegg til konkurransespilling streamet jeg på Twitch i syv år og bygget opp en følgerbase på rundt 3 500 følgere.",
   channels: [
     {
       platform: "YouTube",
