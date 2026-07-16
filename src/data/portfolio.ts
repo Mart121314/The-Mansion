@@ -144,6 +144,11 @@ export const experience = [
     title: "Twitch-streamer",
     place: "World of Warcraft — bygget opp en følgerbase på rundt 3 500 følgere",
   },
+  {
+    year: "2015",
+    title: "Frivillig arbeid — Teknisk støtte for eldre",
+    place: "Frivilligsentralen, Knarvik",
+  },
 ];
 
 export const gaming = {
