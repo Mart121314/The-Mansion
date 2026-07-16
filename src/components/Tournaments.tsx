@@ -41,7 +41,7 @@ export default function Tournaments() {
       <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">
         TURNERINGER DELTATT I
       </h3>
-      <ul className="mt-6 flex flex-col divide-y divide-neutral-200 border-t border-b border-neutral-200">
+      <ul className="mt-6 flex flex-col divide-y divide-neutral-200/70 rounded-sm bg-accent/40 px-6">
         {tournaments.history.map((entry, index) => (
           <Reveal key={entry.name} delay={Math.min(index, 6) * 40}>
             <a
@@ -76,7 +76,7 @@ export default function Tournaments() {
               href={video.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between gap-4 rounded-sm border border-neutral-200 px-6 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
+              className="group flex items-center justify-between gap-4 rounded-sm border border-neutral-200 bg-accent-soft/60 px-6 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
             >
               <div className="flex items-center gap-4">
                 <span className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-accent-soft text-neutral-700">

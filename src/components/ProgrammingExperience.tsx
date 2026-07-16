@@ -114,7 +114,7 @@ export default function ProgrammingExperience() {
             rel="noopener noreferrer"
             className="group flex flex-col gap-4"
           >
-            <div className="flex aspect-[4/3] w-full items-center justify-center rounded-sm border border-neutral-200 transition-all duration-300 group-hover:border-neutral-400 group-hover:shadow-sm">
+            <div className="flex aspect-[4/3] w-full items-center justify-center rounded-sm border border-neutral-200 bg-accent-soft/60 transition-all duration-300 group-hover:border-neutral-400 group-hover:shadow-sm">
               <GitHubIcon className="h-16 w-16 text-neutral-800 transition-transform duration-300 group-hover:scale-110" />
             </div>
             <div>

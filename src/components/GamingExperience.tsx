@@ -28,7 +28,7 @@ export default function GamingExperience() {
               href={channel.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between gap-4 rounded-sm border border-neutral-200 px-6 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
+              className="group flex items-center justify-between gap-4 rounded-sm border border-neutral-200 bg-accent-soft/60 px-6 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
             >
               <div className="flex items-center gap-4">
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent-soft text-neutral-700">
