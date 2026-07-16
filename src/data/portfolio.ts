@@ -76,13 +76,6 @@ export const myServices = {
   ],
 };
 
-export const stats = [
-  { value: "6+", label: "År med konkurranse-e-sport" },
-  { value: "~3 500", label: "Twitch-følgere" },
-  { value: "7", label: "År med innholdsproduksjon" },
-  { value: "Topp 3", label: "Europeiske e-sportplasseringer" },
-];
-
 export const advantages = [
   {
     label: "Angular",

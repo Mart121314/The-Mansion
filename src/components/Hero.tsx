@@ -1,4 +1,4 @@
-import { bio, contact, linkedin, profile, services, stats } from "@/data/portfolio";
+import { bio, contact, linkedin, profile, services } from "@/data/portfolio";
 import Portrait from "./Portrait";
 
 export default function Hero() {
@@ -19,8 +19,14 @@ export default function Hero() {
               {bio.paragraph}
             </p>
           </InfoBlock>
+        </div>
 
-          <InfoBlock eyebrow={contact.eyebrow}>
+        <div className="order-1 lg:order-2">
+          <Portrait />
+        </div>
+
+        <div className="order-3 flex flex-col gap-10 text-center lg:items-end lg:text-right">
+          <InfoBlock eyebrow={contact.eyebrow} align="right">
             <p className="text-sm leading-relaxed text-neutral-600">
               {contact.location}
               <br />
@@ -39,28 +45,13 @@ export default function Hero() {
             </p>
           </InfoBlock>
 
-          <InfoBlock eyebrow={services.eyebrow}>
+          <InfoBlock eyebrow={services.eyebrow} align="right">
             <ul className="text-sm leading-relaxed text-neutral-600">
               {services.items.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
           </InfoBlock>
-        </div>
-
-        <div className="order-1 lg:order-2">
-          <Portrait />
-        </div>
-
-        <div className="order-3 flex flex-col gap-8 text-center lg:items-end lg:text-right">
-          {stats.map((stat) => (
-            <div key={stat.label}>
-              <p className="text-[11px] tracking-[0.15em] text-neutral-400">
-                {stat.label.toUpperCase()}
-              </p>
-              <p className="font-serif text-3xl">{stat.value}</p>
-            </div>
-          ))}
         </div>
       </div>
     </section>
@@ -70,12 +61,18 @@ export default function Hero() {
 function InfoBlock({
   eyebrow,
   children,
+  align = "left",
 }: {
   eyebrow: string;
   children: React.ReactNode;
+  align?: "left" | "right";
 }) {
   return (
-    <div className="flex flex-col items-center gap-3 lg:items-start">
+    <div
+      className={`flex flex-col items-center gap-3 ${
+        align === "right" ? "lg:items-end" : "lg:items-start"
+      }`}
+    >
       <p className="text-[11px] tracking-[0.15em] text-neutral-400">
         {eyebrow.toUpperCase()}
       </p>
