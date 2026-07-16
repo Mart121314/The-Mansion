@@ -2,6 +2,11 @@ import { tournaments } from "@/data/portfolio";
 import Reveal from "./Reveal";
 import YouTubeIcon from "./icons/YouTubeIcon";
 
+function getYouTubeThumbnail(url: string) {
+  const match = url.match(/(?:v=|youtu\.be\/)([\w-]{11})/);
+  return match ? `https://img.youtube.com/vi/${match[1]}/hqdefault.jpg` : null;
+}
+
 export default function Tournaments() {
   return (
     <section id="tournaments" className="mx-auto w-full max-w-6xl px-6 py-24 sm:px-10">
@@ -63,7 +68,9 @@ export default function Tournaments() {
         HØYDEPUNKTER
       </h3>
       <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-        {tournaments.videos.map((video, index) => (
+        {tournaments.videos.map((video, index) => {
+          const thumbnail = getYouTubeThumbnail(video.href);
+          return (
           <Reveal key={video.href} delay={Math.min(index, 6) * 60}>
             <a
               href={video.href}
@@ -72,8 +79,22 @@ export default function Tournaments() {
               className="group flex items-center justify-between gap-4 rounded-sm border border-neutral-200 px-6 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
             >
               <div className="flex items-center gap-4">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent-soft text-neutral-700">
-                  <YouTubeIcon className="h-5 w-5" />
+                <span className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-accent-soft text-neutral-700">
+                  {thumbnail ? (
+                    <>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={thumbnail}
+                        alt=""
+                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <span className="absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        <YouTubeIcon className="h-4 w-4 text-white drop-shadow" />
+                      </span>
+                    </>
+                  ) : (
+                    <YouTubeIcon className="h-5 w-5" />
+                  )}
                 </span>
                 <div>
                   <p className="text-[11px] tracking-[0.15em] text-neutral-400">
@@ -87,7 +108,8 @@ export default function Tournaments() {
               </p>
             </a>
           </Reveal>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
