@@ -308,13 +308,13 @@ export const programming = {
   ],
   games: [
     {
-      title: "Spill én",
+      title: "Project Lost Chapter",
       role: "Programmerer",
       href: "https://www.youtube.com/watch?v=_U47dI4AdT4",
       image: "/images/game-one.png",
     },
     {
-      title: "Spill to",
+      title: "The Mansion, Bachelor Project",
       role: "Programmerer",
       href: "https://youtu.be/Jd2pV-DhOn8",
       image: "/images/game-two.png",
