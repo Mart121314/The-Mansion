@@ -79,6 +79,10 @@ export const myServices = {
       name: "Konsulent / undervisning",
       items: ["Coaching", "Teknisk rådgivning"],
     },
+    {
+      name: "Fysiske tjenester",
+      items: ["Bygge PC-er"],
+    },
   ],
 };
 
