@@ -304,13 +304,13 @@ export const programming = {
   games: [
     {
       title: "Project Lost Chapter",
-      role: "Programmerer",
+      role: "En visuell novelle hvor jeg utviklet spillmekanismer i Unity Engine og programmerte funksjonaliteten i C#.",
       href: "https://www.youtube.com/watch?v=_U47dI4AdT4",
       image: "/images/game-one.png",
     },
     {
       title: "The Mansion, Bachelor Project",
-      role: "Programmerer",
+      role: "Et skrekkspill utviklet som bachelorprosjekt i Unreal Engine 5, hvor jeg hadde ansvar for level layout, spillmekanikker, lyssetting, lyddesign og implementering av spill-systemer.",
       href: "https://youtu.be/Jd2pV-DhOn8",
       image: "/images/game-two.png",
     },
