@@ -151,6 +151,11 @@ export const experience = [
     place: "Frivilligsentralen, Knarvik",
     note: "Hjalp eldre med tekniske utfordringer knyttet til PC, mobiltelefoner, nettbrett og digitale tjenester. Bisto med å forklare teknologi på en enkel og forståelig måte, tilpasset hver enkelt persons behov og forkunnskaper.",
   },
+  {
+    year: "2013 – nå",
+    title: "PC-bygging",
+    place: "Satt sammen og bygget egne og andres PC-er gjennom flere år, med fokus på komponentvalg, ytelse og feilsøking av maskinvare.",
+  },
 ];
 
 export const gaming = {
