@@ -25,7 +25,7 @@ export const socials = [
 ];
 
 export const bio = {
-  eyebrow: "Sammendrag",
+  eyebrow: "Om meg",
   paragraph:
     "Jeg er en strukturert og lærevillig person med gode IT-kunnskaper, samt en sterk interesse for teknologi, programmering og digital utvikling. Mange år med konkurranse innenfor e-sport, sammen med studier og arbeidserfaring, har gitt meg gode ferdigheter innen problemløsning, kommunikasjon og teknisk forståelse.",
 };
