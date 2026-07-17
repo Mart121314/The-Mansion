@@ -59,7 +59,16 @@ export const myServices = {
     },
     {
       name: "Spillutvikling",
-      items: ["Lage små spill/prototyper", "Spilldesign-konsulent"],
+      items: [
+        "Lage spillprototyper og interaktive opplevelser",
+        "Gameplay-mekanikker og systemutvikling",
+        "Level design og spilleropplevelse",
+        "Implementering i Unity og Unreal Engine",
+        "Puzzle- og gameplay-systemer",
+        "Spilldesign-konsulent",
+        "Testing og evaluering av spillopplevelser",
+        "Konseptutvikling fra idé til spillbar prototype",
+      ],
     },
     {
       name: "Kreative tjenester",
