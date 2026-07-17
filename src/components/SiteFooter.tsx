@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 import { contact, profile, socials } from "@/data/portfolio";
 
 export default function SiteFooter() {
@@ -10,6 +11,7 @@ export default function SiteFooter() {
     try {
       await navigator.clipboard.writeText(contact.email);
       setCopied(true);
+      track("E-post kopiert");
       setTimeout(() => setCopied(false), 2000);
     } catch {
       // Clipboard API unavailable — nothing to fall back to gracefully here.
@@ -32,6 +34,7 @@ export default function SiteFooter() {
           href={contact.formUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => track("Kontakt meg klikket")}
           className="mt-2 inline-flex items-center rounded-full bg-neutral-900 px-8 py-3 text-sm text-white transition-colors hover:bg-neutral-700"
         >
           {contact.cta}
@@ -55,6 +58,7 @@ export default function SiteFooter() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => track("Sosial lenke klikket", { platform: social.label })}
                 className="transition-colors hover:text-neutral-900"
               >
                 {social.label}

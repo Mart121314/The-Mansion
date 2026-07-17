@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 import { nav, profile, socials } from "@/data/portfolio";
 import GitHubIcon from "./icons/GitHubIcon";
 import LinkedInIcon from "./icons/LinkedInIcon";
@@ -73,6 +74,7 @@ export default function SiteHeader() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.label}
+              onClick={() => track("Sosial lenke klikket", { platform: social.label })}
               className="transition-colors hover:text-neutral-900"
             >
               <SocialIcon label={social.label} />

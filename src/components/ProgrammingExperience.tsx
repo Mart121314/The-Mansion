@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { track } from "@vercel/analytics";
 import { github, programming } from "@/data/portfolio";
 import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import GitHubIcon from "./icons/GitHubIcon";
@@ -33,6 +36,7 @@ export default function ProgrammingExperience() {
             <a
               href={site.href}
               {...externalLinkProps(site.href)}
+              onClick={() => track("Nettside klikket", { title: site.title })}
               className="group flex flex-col gap-4"
             >
               {site.image ? (
@@ -71,6 +75,7 @@ export default function ProgrammingExperience() {
             <a
               href={game.href}
               {...externalLinkProps(game.href)}
+              onClick={() => track("Spill klikket", { title: game.title })}
               className="group flex flex-col gap-4"
             >
               {game.image ? (
@@ -111,6 +116,7 @@ export default function ProgrammingExperience() {
             href={github}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => track("Sosial lenke klikket", { platform: "GitHub" })}
             className="group flex flex-col gap-4"
           >
             <div className="relative flex aspect-[4/3] w-full items-center justify-center rounded-sm border border-neutral-200 bg-accent-soft/60 transition-all duration-300 group-hover:border-neutral-400 group-hover:shadow-sm">
