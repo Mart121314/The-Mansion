@@ -97,7 +97,7 @@ export const advantages = [
     label: "TypeScript",
     year: "2023 – nå",
     description:
-      "Typet utvikling i Angular-prosjekter med interfaces, services, komponenter og API-håndtering.",
+      "Typeskrift brukt i utvikling av Angular-prosjekter med interfaces, services, komponenter og API-håndtering.",
   },
   {
     label: "JavaScript",
@@ -298,15 +298,6 @@ export const programming = {
   heading: "Programmering & Utvikling",
   paragraph:
     "Praktisk erfaring innen frontend-utvikling, spillmotorer og systemarbeid, opparbeidet gjennom Å-Energi, studier og egne prosjekter.",
-  skills: [
-    "Angular & AngularJS",
-    "TypeScript",
-    "JavaScript",
-    "HTML",
-    "Unreal Engine & Unity",
-    "Databaser",
-    "MS Office",
-  ],
   // Bytt ut de resterende placeholder-kortene med dine egne prosjekter når
   // du har titler, lenker og skjermbilder for dem.
   websites: [

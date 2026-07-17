@@ -24,17 +24,6 @@ export default function ProgrammingExperience() {
         {programming.paragraph}
       </p>
 
-      <div className="mt-8 flex flex-wrap gap-3">
-        {programming.skills.map((skill) => (
-          <span
-            key={skill}
-            className="rounded-full border border-neutral-200 px-4 py-1.5 text-sm text-neutral-600 transition-colors hover:border-neutral-400"
-          >
-            {skill}
-          </span>
-        ))}
-      </div>
-
       <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">
         NETTSIDER
       </h3>
