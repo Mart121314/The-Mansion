@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { github, programming } from "@/data/portfolio";
+import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import GitHubIcon from "./icons/GitHubIcon";
 import PlayIcon from "./icons/PlayIcon";
 import Reveal from "./Reveal";
@@ -54,6 +55,9 @@ export default function ProgrammingExperience() {
                     sizes="(min-width: 640px) 33vw, 100vw"
                     className="object-cover object-left-top transition-transform duration-300 group-hover:scale-105"
                   />
+                  <span className="absolute top-3 right-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 shadow-sm transition-transform duration-300 group-hover:scale-110">
+                    <ExternalLinkIcon className="h-4 w-4 text-neutral-900" />
+                  </span>
                 </div>
               ) : (
                 <div className="aspect-[4/3] w-full rounded-sm bg-accent transition-colors group-hover:bg-accent-soft" />
