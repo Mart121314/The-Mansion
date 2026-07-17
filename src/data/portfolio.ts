@@ -156,9 +156,9 @@ export const gaming = {
     },
     {
       platform: "Twitch",
-      name: "Berlyirltv",
+      name: "martinirltv",
       stat: "~3 500 følgere",
-      href: "https://twitch.tv/Berlyirltv",
+      href: "https://www.twitch.tv/martinirltv",
     },
   ],
 };
