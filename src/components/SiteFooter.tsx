@@ -29,7 +29,9 @@ export default function SiteFooter() {
         <p className="text-sm text-neutral-600">{contact.subtext}</p>
 
         <a
-          href={`mailto:${contact.email}`}
+          href={contact.formUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-2 inline-flex items-center rounded-full bg-neutral-900 px-8 py-3 text-sm text-white transition-colors hover:bg-neutral-700"
         >
           {contact.cta}
