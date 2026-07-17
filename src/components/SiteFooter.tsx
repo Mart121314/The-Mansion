@@ -22,16 +22,29 @@ export default function SiteFooter() {
         <p className="text-[11px] tracking-[0.15em] text-neutral-400">
           {copied ? "E-POST KOPIERT" : "LA OSS JOBBE SAMMEN"}
         </p>
+
+        <h2 className="max-w-xl font-serif text-2xl sm:text-3xl">
+          {contact.heading}
+        </h2>
+        <p className="text-sm text-neutral-600">{contact.subtext}</p>
+
+        <a
+          href={`mailto:${contact.email}`}
+          className="mt-2 inline-flex items-center rounded-full bg-neutral-900 px-8 py-3 text-sm text-white transition-colors hover:bg-neutral-700"
+        >
+          {contact.cta}
+        </a>
+
         <button
           type="button"
           onClick={handleCopyEmail}
           aria-label="Kopier e-postadresse"
-          className="max-w-full cursor-pointer font-serif text-xl leading-snug break-words transition-colors hover:text-neutral-600 sm:text-3xl md:text-4xl"
+          className="mt-6 max-w-full cursor-pointer text-sm break-words text-neutral-500 transition-colors hover:text-neutral-900"
         >
           {contact.email}
         </button>
 
-        <div className="mt-6 flex gap-6 text-sm text-neutral-500">
+        <div className="mt-4 flex gap-6 text-sm text-neutral-500">
           {socials
             .filter((social) => social.label !== "LinkedIn")
             .map((social) => (

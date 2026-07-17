@@ -32,6 +32,9 @@ export const bio = {
 
 export const contact = {
   eyebrow: "Kontakt",
+  heading: "Har du et prosjekt eller trenger teknisk hjelp?",
+  subtext: "Ta kontakt for en uforpliktende prat.",
+  cta: "Kontakt meg",
   location: "Kristiansand, Norge",
   email: "it_utvikling@martineikefet.dev",
   phone: "+47 406 16 483",
