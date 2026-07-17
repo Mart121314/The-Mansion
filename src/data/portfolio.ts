@@ -321,7 +321,7 @@ export const programming = {
     },
     {
       title: "The Mansion, Bachelor Project",
-      role: "Et skrekkspill utviklet som bachelorprosjekt i Unreal Engine 5, hvor jeg hadde ansvar for level layout, spillmekanikker, lyssetting, lyddesign og implementering av spill-systemer.",
+      role: "Et skrekkspill utviklet som bachelorprosjekt i Unreal Engine 5 med Blueprints, hvor jeg hadde ansvar for level layout, spillmekanikker, lyssetting, lyddesign og implementering av spill-systemer.",
       href: "https://youtu.be/Jd2pV-DhOn8",
       image: "/images/game-two.png",
     },
