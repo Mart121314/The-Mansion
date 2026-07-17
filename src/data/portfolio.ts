@@ -298,8 +298,6 @@ export const programming = {
   heading: "Programmering & Utvikling",
   paragraph:
     "Praktisk erfaring innen frontend-utvikling, spillmotorer og systemarbeid, opparbeidet gjennom Å-Energi, studier og egne prosjekter.",
-  // Bytt ut de resterende placeholder-kortene med dine egne prosjekter når
-  // du har titler, lenker og skjermbilder for dem.
   websites: [
     {
       title: "Weather Forecast",
