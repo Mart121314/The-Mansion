@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { github, programming } from "@/data/portfolio";
 import GitHubIcon from "./icons/GitHubIcon";
+import PlayIcon from "./icons/PlayIcon";
 import Reveal from "./Reveal";
 
 function externalLinkProps(href: string) {
@@ -88,6 +89,11 @@ export default function ProgrammingExperience() {
                     sizes="(min-width: 640px) 33vw, 100vw"
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors duration-300 group-hover:bg-black/20">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/90 shadow-md transition-transform duration-300 group-hover:scale-110">
+                      <PlayIcon className="h-5 w-5 translate-x-0.5 text-neutral-900" />
+                    </span>
+                  </div>
                 </div>
               ) : (
                 <div className="aspect-[4/3] w-full rounded-sm bg-accent transition-colors group-hover:bg-accent-soft" />
