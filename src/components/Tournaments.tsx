@@ -1,4 +1,6 @@
 import { tournaments } from "@/data/portfolio";
+import ExternalLinkIcon from "./icons/ExternalLinkIcon";
+import PlayIcon from "./icons/PlayIcon";
 import Reveal from "./Reveal";
 import YouTubeIcon from "./icons/YouTubeIcon";
 
@@ -56,9 +58,12 @@ export default function Tournaments() {
                 </p>
                 <p className="text-sm text-neutral-500">Spilte for {entry.team}</p>
               </div>
-              <p className="text-sm whitespace-nowrap text-neutral-500">
-                {entry.placement}
-              </p>
+              <div className="flex items-center gap-3">
+                <p className="text-sm whitespace-nowrap text-neutral-500">
+                  {entry.placement}
+                </p>
+                <ExternalLinkIcon className="h-4 w-4 shrink-0 text-neutral-400 transition-colors group-hover:text-neutral-700" />
+              </div>
             </a>
           </Reveal>
         ))}
@@ -79,7 +84,7 @@ export default function Tournaments() {
               className="group flex items-center justify-between gap-4 rounded-sm border border-neutral-200 bg-accent-soft/60 px-6 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
             >
               <div className="flex items-center gap-4">
-                <span className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-accent-soft text-neutral-700">
+                <span className="relative flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full bg-accent-soft text-neutral-700">
                   {thumbnail ? (
                     <>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -88,12 +93,14 @@ export default function Tournaments() {
                         alt=""
                         className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
                       />
-                      <span className="absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <YouTubeIcon className="h-4 w-4 text-white drop-shadow" />
+                      <span className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors duration-300 group-hover:bg-black/20">
+                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/90 shadow-md transition-transform duration-300 group-hover:scale-110">
+                          <PlayIcon className="h-3.5 w-3.5 translate-x-0.5 text-neutral-900" />
+                        </span>
                       </span>
                     </>
                   ) : (
-                    <YouTubeIcon className="h-5 w-5" />
+                    <YouTubeIcon className="h-6 w-6" />
                   )}
                 </span>
                 <div>
