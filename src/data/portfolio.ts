@@ -310,7 +310,7 @@ export const programming = {
     {
       title: "ArenaQ",
       description: "Aktivitets- og rangeringsoversikt for MoP 3v3-arena, med spillersøk og leaderboard.",
-      href: "https://arenaq.vercel.app/",
+      href: "https://mm-913.vercel.app/archives",
       image: "/images/website-arenaq.png",
     },
   ],
