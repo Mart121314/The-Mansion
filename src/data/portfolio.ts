@@ -88,6 +88,12 @@ export const myServices = {
 
 export const advantages = [
   {
+    label: "Videoredigering",
+    year: "2016 – nå",
+    description:
+      "Klipping, fargekorrigering og lydmiksing av gaming- og turneringsinnhold, blant annet for Bergen Boys og eget YouTube-/Twitch-innhold.",
+  },
+  {
     label: "Angular",
     year: "2023 – nå",
     description:
