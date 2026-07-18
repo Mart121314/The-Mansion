@@ -28,7 +28,7 @@ export default function ProgrammingExperience() {
         {programming.paragraph}
       </p>
 
-      <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">
+      <h3 id="nettsider" className="mt-16 scroll-mt-24 text-sm tracking-[0.15em] text-neutral-400">
         NETTSIDER
       </h3>
       <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-3">
@@ -67,7 +67,7 @@ export default function ProgrammingExperience() {
         ))}
       </div>
 
-      <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">
+      <h3 id="spill" className="mt-16 scroll-mt-24 text-sm tracking-[0.15em] text-neutral-400">
         SPILL
       </h3>
       <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-3">
@@ -108,7 +108,7 @@ export default function ProgrammingExperience() {
         ))}
       </div>
 
-      <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">
+      <h3 id="edits" className="mt-16 scroll-mt-24 text-sm tracking-[0.15em] text-neutral-400">
         EDITS
       </h3>
       <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-3">

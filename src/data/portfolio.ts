@@ -92,35 +92,41 @@ export const advantages = [
     year: "2016 – nå",
     description:
       "Klipping, fargekorrigering og lydmiksing av gaming- og turneringsinnhold, blant annet for Bergen Boys og eget YouTube-/Twitch-innhold.",
+    target: "edits",
   },
   {
     label: "Angular",
     year: "2023 – nå",
     description:
       "Utvikling av webapplikasjoner med komponentbasert arkitektur, routing, API-integrasjon og tjenester — brukt gjennom Å-Energi, skoleprosjekter og egne prosjekter.",
+    target: "nettsider",
   },
   {
     label: "TypeScript",
     year: "2023 – nå",
     description:
       "TypeScript brukt i utvikling av Angular-prosjekter med interfaces, services, komponenter og API-håndtering.",
+    target: "nettsider",
   },
   {
     label: "JavaScript",
     year: "2023 – nå",
     description:
       "Programmering av spill og logikk i terminalbaserte prosjekter, debugging og utvikling av funksjonalitet sammen med frontend-teknologier og API-er.",
+    target: "nettsider",
   },
   {
     label: "HTML",
     year: "2023 – nå",
     description:
       "Oppbygging og strukturering av nettsider og brukergrensesnitt i frontend-utvikling.",
+    target: "nettsider",
   },
   {
     label: "Unreal Engine / Unity",
     year: "2025 – nå",
     description: "Utforsker spillutvikling og spillogikk i Unreal Engine og Unity.",
+    target: "spill",
   },
 ];
 
