@@ -97,7 +97,7 @@ export const advantages = [
     label: "TypeScript",
     year: "2023 – nå",
     description:
-      "Typeskrift brukt i utvikling av Angular-prosjekter med interfaces, services, komponenter og API-håndtering.",
+      "TypeScript brukt i utvikling av Angular-prosjekter med interfaces, services, komponenter og API-håndtering.",
   },
   {
     label: "JavaScript",
