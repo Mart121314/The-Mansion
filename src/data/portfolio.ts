@@ -330,7 +330,7 @@ export const programming = {
     {
       title: "Edited Video Bergen Boys",
       description: "Videoredigering laget for Bergen Boys.",
-      href: "https://youtu.be/1p77ATqY0E4",
+      href: "https://www.youtube.com/watch?v=-_hEXzqcSQQ",
     },
   ],
 };
