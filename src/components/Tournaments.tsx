@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { tournaments } from "@/data/portfolio";
 import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import PlayIcon from "./icons/PlayIcon";
@@ -5,7 +8,15 @@ import Reveal from "./Reveal";
 import YouTubeIcon from "./icons/YouTubeIcon";
 import { getYouTubeThumbnail } from "@/lib/youtube";
 
+const COLLAPSED_COUNT = 4;
+
 export default function Tournaments() {
+  const [expanded, setExpanded] = useState(false);
+  const visibleHistory = expanded
+    ? tournaments.history
+    : tournaments.history.slice(0, COLLAPSED_COUNT);
+  const hiddenCount = tournaments.history.length - COLLAPSED_COUNT;
+
   return (
     <section id="tournaments" className="mx-auto w-full max-w-6xl px-6 py-24 sm:px-10">
       <p className="text-[11px] tracking-[0.15em] text-neutral-400">
@@ -40,13 +51,13 @@ export default function Tournaments() {
         TURNERINGER DELTATT I
       </h3>
       <ul className="mt-6 flex flex-col divide-y divide-neutral-200/70 rounded-sm bg-accent/40 px-6">
-        {tournaments.history.map((entry, index) => (
+        {visibleHistory.map((entry, index) => (
           <Reveal key={entry.name} delay={Math.min(index, 6) * 40}>
             <a
               href={entry.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col gap-1 py-5 transition-colors hover:bg-accent-soft sm:flex-row sm:items-center sm:justify-between sm:gap-4"
+              className="group flex flex-col gap-1 py-4 transition-colors hover:bg-accent-soft sm:flex-row sm:items-center sm:justify-between sm:gap-4"
             >
               <div>
                 <p className="text-base transition-colors group-hover:text-neutral-600">
@@ -64,11 +75,20 @@ export default function Tournaments() {
           </Reveal>
         ))}
       </ul>
+      {hiddenCount > 0 && (
+        <button
+          type="button"
+          onClick={() => setExpanded((value) => !value)}
+          className="mt-4 text-sm tracking-wide text-neutral-500 underline-offset-4 hover:text-neutral-900 hover:underline"
+        >
+          {expanded ? "Vis færre" : `Vis alle (${tournaments.history.length})`}
+        </button>
+      )}
 
       <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">
         HØYDEPUNKTER
       </h3>
-      <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+      <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {tournaments.videos.map((video, index) => {
           const thumbnail = getYouTubeThumbnail(video.href);
           return (
@@ -77,38 +97,34 @@ export default function Tournaments() {
               href={video.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between gap-4 rounded-sm border border-neutral-200 bg-accent-soft/60 px-6 py-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
+              className="group flex items-center gap-3 rounded-sm border border-neutral-200 bg-accent-soft/60 px-5 py-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
             >
-              <div className="flex items-center gap-4">
-                <span className="relative flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full bg-accent-soft text-neutral-700">
-                  {thumbnail ? (
-                    <>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={thumbnail}
-                        alt=""
-                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-                      />
-                      <span className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors duration-300 group-hover:bg-black/20">
-                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/90 shadow-md transition-transform duration-300 hover:scale-110">
-                          <PlayIcon className="h-3.5 w-3.5 translate-x-0.5 text-neutral-900" />
-                        </span>
+              <span className="relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-accent-soft text-neutral-700">
+                {thumbnail ? (
+                  <>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={thumbnail}
+                      alt=""
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <span className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors duration-300 group-hover:bg-black/20">
+                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white/90 shadow-md transition-transform duration-300 hover:scale-110">
+                        <PlayIcon className="h-3 w-3 translate-x-0.5 text-neutral-900" />
                       </span>
-                    </>
-                  ) : (
-                    <YouTubeIcon className="h-6 w-6" />
-                  )}
-                </span>
-                <div>
-                  <p className="text-[11px] tracking-[0.15em] text-neutral-400">
-                    YOUTUBE
-                  </p>
-                  <p className="text-base">{video.name}</p>
-                </div>
+                    </span>
+                  </>
+                ) : (
+                  <YouTubeIcon className="h-5 w-5" />
+                )}
+              </span>
+              <div className="min-w-0">
+                <p className="text-[11px] tracking-[0.15em] text-neutral-400">
+                  YOUTUBE
+                </p>
+                <p className="truncate text-base">{video.name}</p>
+                <p className="text-sm text-neutral-500">{video.stat}</p>
               </div>
-              <p className="text-sm whitespace-nowrap text-neutral-500">
-                {video.stat}
-              </p>
             </a>
           </Reveal>
           );
