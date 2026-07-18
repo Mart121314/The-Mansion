@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { track } from "@vercel/analytics";
 import { github, programming } from "@/data/portfolio";
+import { getYouTubeThumbnail } from "@/lib/youtube";
 import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import GitHubIcon from "./icons/GitHubIcon";
 import PlayIcon from "./icons/PlayIcon";
@@ -105,6 +106,48 @@ export default function ProgrammingExperience() {
             </a>
           </Reveal>
         ))}
+      </div>
+
+      <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">
+        EDITS
+      </h3>
+      <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-3">
+        {programming.edits.map((edit, index) => {
+          const thumbnail = getYouTubeThumbnail(edit.href);
+          return (
+            <Reveal key={edit.title} delay={index * 80}>
+              <a
+                href={edit.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => track("Edit klikket", { title: edit.title })}
+                className="group flex flex-col gap-4"
+              >
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm bg-accent">
+                  {thumbnail && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={thumbnail}
+                      alt={edit.title}
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  )}
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors duration-300 group-hover:bg-black/20">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/90 shadow-md transition-transform duration-300 hover:scale-110">
+                      <PlayIcon className="h-5 w-5 translate-x-0.5 text-neutral-900" />
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <p className="text-lg transition-colors group-hover:text-neutral-600">
+                    {edit.title}
+                  </p>
+                  <p className="mt-1 text-sm text-neutral-500">{edit.description}</p>
+                </div>
+              </a>
+            </Reveal>
+          );
+        })}
       </div>
 
       <h3 className="mt-16 text-sm tracking-[0.15em] text-neutral-400">

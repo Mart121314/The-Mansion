@@ -326,4 +326,11 @@ export const programming = {
       image: "/images/game-two.png",
     },
   ],
+  edits: [
+    {
+      title: "Edited Video Bergen Boys",
+      description: "Videoredigering laget for Bergen Boys.",
+      href: "https://youtu.be/1p77ATqY0E4",
+    },
+  ],
 };

@@ -3,11 +3,7 @@ import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import PlayIcon from "./icons/PlayIcon";
 import Reveal from "./Reveal";
 import YouTubeIcon from "./icons/YouTubeIcon";
-
-function getYouTubeThumbnail(url: string) {
-  const match = url.match(/(?:v=|youtu\.be\/)([\w-]{11})/);
-  return match ? `https://img.youtube.com/vi/${match[1]}/hqdefault.jpg` : null;
-}
+import { getYouTubeThumbnail } from "@/lib/youtube";
 
 export default function Tournaments() {
   return (
