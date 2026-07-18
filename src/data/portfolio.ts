@@ -88,6 +88,13 @@ export const myServices = {
 
 export const advantages = [
   {
+    label: "Innholdsprodusent",
+    year: "2016 – 2023",
+    description:
+      "Produserte og publiserte gaming-innhold på YouTube og Twitch, med direktesendinger og videoer innen World of Warcraft og en følgerbase på rundt 3 500.",
+    target: "gaming",
+  },
+  {
     label: "Videoredigering",
     year: "2016 – nå",
     description:
