@@ -122,7 +122,7 @@ export default function Tournaments() {
                 <p className="text-[11px] tracking-[0.15em] text-neutral-400">
                   YOUTUBE
                 </p>
-                <p className="truncate text-base">{video.name}</p>
+                <p className="line-clamp-2 text-base leading-snug">{video.name}</p>
                 <p className="text-sm text-neutral-500">{video.stat}</p>
               </div>
             </a>
