@@ -4,16 +4,18 @@ import { track } from "@vercel/analytics";
 import { myServices } from "@/data/portfolio";
 import Reveal from "./Reveal";
 
+function goToContact(source: string) {
+  track("Kontakt meg klikket", { source });
+  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 export default function Services() {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 py-24 sm:px-10">
       <Reveal>
         <button
           type="button"
-          onClick={() => {
-            track("Kontakt meg klikket", { source: "Mine tjenester" });
-            document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
+          onClick={() => goToContact("Mine tjenester")}
           className="font-serif text-3xl transition-colors hover:text-neutral-600"
         >
           {myServices.heading}
@@ -29,12 +31,14 @@ export default function Services() {
               </h3>
               <div className="mt-4 flex flex-wrap gap-3">
                 {category.items.map((item) => (
-                  <span
+                  <button
                     key={item}
-                    className="rounded-full border border-neutral-200 px-4 py-1.5 text-sm text-neutral-600 transition-colors hover:border-neutral-400"
+                    type="button"
+                    onClick={() => goToContact(item)}
+                    className="rounded-full border border-neutral-200 px-4 py-1.5 text-sm text-neutral-600 transition-colors hover:border-neutral-400 hover:text-neutral-900"
                   >
                     {item}
-                  </span>
+                  </button>
                 ))}
               </div>
             </div>
