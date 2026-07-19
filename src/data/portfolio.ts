@@ -48,6 +48,7 @@ export const services = {
 
 export const myServices = {
   heading: "Mine tjenester",
+  bookingUrl: "https://client-portal-pko46gzdu-mart121314s-projects.vercel.app/login",
   categories: [
     {
       name: "Webutvikling",

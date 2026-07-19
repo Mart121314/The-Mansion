@@ -2,6 +2,7 @@
 
 import { track } from "@vercel/analytics";
 import { myServices } from "@/data/portfolio";
+import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import Reveal from "./Reveal";
 
 function goToContact(source: string) {
@@ -13,13 +14,25 @@ export default function Services() {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 py-24 sm:px-10">
       <Reveal>
-        <button
-          type="button"
-          onClick={() => goToContact("Mine tjenester")}
-          className="font-serif text-3xl transition-colors hover:text-neutral-600"
-        >
-          {myServices.heading}
-        </button>
+        <div className="flex flex-col items-start gap-3">
+          <button
+            type="button"
+            onClick={() => goToContact("Mine tjenester")}
+            className="font-serif text-3xl transition-colors hover:text-neutral-600"
+          >
+            {myServices.heading}
+          </button>
+          <a
+            href={myServices.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => track("Bestill tjenester klikket")}
+            className="inline-flex items-center gap-1.5 text-sm text-neutral-500 transition-colors hover:text-neutral-900"
+          >
+            Bestill mine tjenester her
+            <ExternalLinkIcon className="h-3.5 w-3.5" />
+          </a>
+        </div>
       </Reveal>
 
       <div className="mt-14 flex flex-col gap-10">
