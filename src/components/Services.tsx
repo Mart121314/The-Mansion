@@ -14,25 +14,28 @@ export default function Services() {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 py-24 sm:px-10">
       <Reveal>
-        <div className="flex flex-col items-start gap-3">
-          <button
-            type="button"
-            onClick={() => goToContact("Mine tjenester")}
-            className="font-serif text-3xl transition-colors hover:text-neutral-600"
-          >
-            {myServices.heading}
-          </button>
-          <a
-            href={myServices.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => track("Bestill tjenester klikket")}
-            className="inline-flex items-center gap-1.5 text-sm text-neutral-500 transition-colors hover:text-neutral-900"
-          >
+        <button
+          type="button"
+          onClick={() => goToContact("Mine tjenester")}
+          className="font-serif text-3xl transition-colors hover:text-neutral-600"
+        >
+          {myServices.heading}
+        </button>
+      </Reveal>
+
+      <Reveal delay={80}>
+        <a
+          href={myServices.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => track("Bestill tjenester klikket")}
+          className="mx-auto mt-6 flex w-full max-w-lg flex-col items-center justify-center gap-2 rounded-sm border border-neutral-200 bg-accent-soft/60 px-8 py-10 text-center transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
+        >
+          <span className="text-lg font-medium text-neutral-900">
             Bestill mine tjenester her
-            <ExternalLinkIcon className="h-3.5 w-3.5" />
-          </a>
-        </div>
+          </span>
+          <ExternalLinkIcon className="h-4 w-4 text-neutral-500" />
+        </a>
       </Reveal>
 
       <div className="mt-14 flex flex-col gap-10">
