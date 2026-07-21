@@ -1,15 +1,12 @@
-import { bio, contact, linkedin, profile, services } from "@/data/portfolio";
+import { bio, contact, linkedin, services } from "@/data/portfolio";
+import Logo from "./Logo";
 import Portrait from "./Portrait";
 
 export default function Hero() {
   return (
     <section id="top" className="mx-auto w-full max-w-6xl px-6 pb-20 pt-8 sm:px-10">
-      <h1 className="mx-auto max-w-5xl text-center font-serif text-4xl leading-tight sm:text-5xl">
-        {profile.name}
-        <br />
-        {profile.role}
-        <br />
-        {profile.location}
+      <h1 className="mx-auto flex max-w-5xl justify-center">
+        <Logo />
       </h1>
 
       <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-[1fr_auto_1fr] lg:gap-8">
