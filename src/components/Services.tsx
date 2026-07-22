@@ -2,7 +2,6 @@
 
 import { track } from "@vercel/analytics";
 import { myServices } from "@/data/portfolio";
-import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import Reveal from "./Reveal";
 
 function goToContact(source: string) {
@@ -21,21 +20,6 @@ export default function Services() {
         >
           {myServices.heading}
         </button>
-      </Reveal>
-
-      <Reveal delay={80}>
-        <a
-          href={myServices.bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => track("Bestill tjenester klikket")}
-          className="mx-auto mt-6 flex w-full max-w-lg flex-col items-center justify-center gap-2 rounded-sm border border-neutral-200 bg-accent-soft/60 px-8 py-10 text-center transition-all duration-300 hover:-translate-y-0.5 hover:border-neutral-400 hover:shadow-sm"
-        >
-          <span className="text-lg font-medium text-neutral-900">
-            Bestill mine tjenester her
-          </span>
-          <ExternalLinkIcon className="h-4 w-4 text-neutral-500" />
-        </a>
       </Reveal>
 
       <div className="mt-14 flex flex-col gap-10">

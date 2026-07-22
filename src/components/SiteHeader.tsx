@@ -41,16 +41,26 @@ export default function SiteHeader() {
         </button>
 
         <nav className="hidden gap-8 text-sm tracking-wide text-neutral-600 sm:flex">
-          {nav.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              onClick={(event) => scrollToSection(event, item.href)}
-              className="hover:text-neutral-900"
-            >
-              {item.label.toUpperCase()}
-            </a>
-          ))}
+          {nav.map((item) => {
+            const isExternal = !item.href.startsWith("#");
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                onClick={(event) => {
+                  if (isExternal) {
+                    track("Bestill tjenester klikket", { source: "Header" });
+                    return;
+                  }
+                  scrollToSection(event, item.href);
+                }}
+                className="hover:text-neutral-900"
+              >
+                {item.label.toUpperCase()}
+              </a>
+            );
+          })}
         </nav>
 
         <a
@@ -89,19 +99,28 @@ export default function SiteHeader() {
         }`}
       >
         <div className="flex flex-col gap-4 overflow-hidden">
-          {nav.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              onClick={(event) => {
-                scrollToSection(event, item.href);
-                setOpen(false);
-              }}
-              className="py-1 hover:text-neutral-900"
-            >
-              {item.label.toUpperCase()}
-            </a>
-          ))}
+          {nav.map((item) => {
+            const isExternal = !item.href.startsWith("#");
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                onClick={(event) => {
+                  if (isExternal) {
+                    track("Bestill tjenester klikket", { source: "Header" });
+                    setOpen(false);
+                    return;
+                  }
+                  scrollToSection(event, item.href);
+                  setOpen(false);
+                }}
+                className="py-1 hover:text-neutral-900"
+              >
+                {item.label.toUpperCase()}
+              </a>
+            );
+          })}
         </div>
       </nav>
     </header>

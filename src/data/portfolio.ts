@@ -8,12 +8,15 @@ export const profile = {
   location: "Bosatt i Kristiansand, Norge",
 };
 
+export const bookingUrl = "https://client-portal-two-ivory.vercel.app";
+
 export const nav = [
   { label: "Utdanning", href: "#education" },
   { label: "Programmering", href: "#work" },
   { label: "Gaming", href: "#gaming" },
   { label: "Turneringer", href: "#tournaments" },
   { label: "Kontakt", href: "#contact" },
+  { label: "Bestill mine tjenester her", href: bookingUrl },
 ];
 
 export const github = "https://github.com/Mart121314";
@@ -48,7 +51,6 @@ export const services = {
 
 export const myServices = {
   heading: "Mine tjenester",
-  bookingUrl: "https://client-portal-two-ivory.vercel.app",
   categories: [
     {
       name: "Webutvikling",
