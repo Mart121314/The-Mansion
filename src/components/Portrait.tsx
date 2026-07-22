@@ -8,7 +8,7 @@ export default function Portrait() {
         alt="Portrett"
         fill
         sizes="(min-width: 640px) 16rem, 14rem"
-        className="object-cover object-top"
+        className="object-cover object-[33%_top]"
         priority
       />
     </div>
