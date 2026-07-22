@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { track } from "@vercel/analytics";
-import { nav, profile, socials } from "@/data/portfolio";
+import { nav, socials } from "@/data/portfolio";
 import GitHubIcon from "./icons/GitHubIcon";
 import LinkedInIcon from "./icons/LinkedInIcon";
 
@@ -62,19 +62,6 @@ export default function SiteHeader() {
             );
           })}
         </nav>
-
-        <a
-          href="#top"
-          onClick={(event) => scrollToSection(event, "#top")}
-          className="flex flex-col items-center gap-1"
-        >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 font-serif text-xs">
-            {profile.initials}
-          </span>
-          <span className="text-[10px] tracking-[0.2em] text-neutral-500">
-            {profile.name.toUpperCase()}
-          </span>
-        </a>
 
         <div className="flex gap-5 text-neutral-500">
           {socials.map((social) => (
