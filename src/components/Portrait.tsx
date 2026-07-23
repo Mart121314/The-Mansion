@@ -9,6 +9,7 @@ export default function Portrait() {
         fill
         sizes="(min-width: 640px) 16rem, 14rem"
         className="object-cover object-[33%_top]"
+        quality={95}
         priority
       />
     </div>
